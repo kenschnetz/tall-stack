@@ -1,18 +1,17 @@
 <?php
 
-namespace Database\Seeders;
+    namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
+    use App\Models\Subscriber;
+    use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
-{
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
-    public function run()
-    {
-        // \App\Models\User::factory(10)->create();
+    class DatabaseSeeder extends Seeder {
+        /**
+         * Seed the application's database.
+         *
+         * @return void
+         */
+        public function run() {
+             Subscriber::factory(10)->create();
+        }
     }
-}
